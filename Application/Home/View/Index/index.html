@@ -123,88 +123,8 @@
 	
 	
 	
-    <!--
-    	作者：兴信网络
-    	时间：2017-08-30
-    	描述：我们的产品
-    -->
-    
-    <style>
-    	.product{
-    		width: 100%;
-			height: auto;
-			border-bottom: 1px solid red;
-			overflow: hidden;
-			background: #f5f5f5;
-			min-height: 300px;
-    	}
-    	.product_heard{
-    		height: 71px;
-    		width: 86%;
-    		margin: auto;
-    		margin-top: 80px;
-    		border: 2px double transparent;
-    	}
-    	.product_hearda{
-    		height: 70px;
-    		width: 16%;
-    		float: left;
-    	}
-    	.product_hearda span:nth-child(1){
-    		display: block;
-    		height: 34px;
-    		font: bold 20px/28px "微软雅黑";
-    		letter-spacing:3px;
-    	}
-    	.product_hearda span div{
-    		display: inline-block;
-    		width: 3rem;
-    		background: #81a405;
-    		height: 3px;
-    		
-    	}
-    	
-    	.product_hearda span:nth-child(2){
-    		display: block;
-    		height: 34px;
-    		font: 400 20px/44px "微软雅黑";
-    		color: #9a9a9a;
-    	}
-    	.product_heardb{
-    		margin-top: 30px;
-    		height: 40px;
-    		width: 76%;
-    		float: left;
-    		overflow: hidden;
-    	}
-    	.product_heardb ul{
-    		font-size: 0px;
-    	}
-    	.product_heardb ul li{
-    		display: inline-block;
-    		height: 38px;
-    		font:400 16px/38px "微软雅黑";
-    		padding: 0px 20px;
-    		margin: 0px 10px;
-    		border: 1px solid #dcdcdc;
-    		cursor: pointer;
-    		color: gray;
-    		transition: all 1s;
-    		overflow: hidden;
-    	}
-    	
-    	.product_heardb ul li:hover{
-    		background: #252f03;
-    		color: whitesmoke;
-    	}
-    	.product_box{
-    		height:400px;
-    		width: 86%;
-    		margin: auto;
-    		margin-top: 80px;
-    		border: 2px double teal;
-    	}
-    </style>
+    <!--描述：我们的产品-->
+
 	<div class="product">
 		<div class="product_heard">
 			<div class="product_hearda">
@@ -222,18 +142,197 @@
 		</div>
 	
 		<div class="product_box">
-			
+				
+			<div id="product_in">
+				<for start='1' end="10">
+					<div class="product_show">
+						<div class="product_show_img">
+							<img src="__PUBLIC__/images/product.jpg"/>
+							<div class="product_hiden">
+								<img src="__PUBLIC__/images/加.png" onclick="alert()"/>
+							</div>
+						</div>
+						
+						<div class="product_show_text">
+							草鸡藤椒油{$i}  &nbsp;&nbsp;250ml
+						</div>
+					</div>
+				</for>
+				<!--<div style="clear: both;"></div>-->
+			</div>
 		</div>
+	
+		<div class="product_btn">
+			<div class="product_btna">
+				<img src="__PUBLIC__/images/pagea.png" class="pagep"/>
+				<img src="__PUBLIC__/images/pageo.png"/>
+				<img src="__PUBLIC__/images/pagen.png" class="pagen"/>
+			</div>
+		</div>
+		
+	
+	
 	</div>
 	
-	<div style="height: 2000px">
+	<!--商品展示-->
+	
+	<style>
+    	.news_heardb{
+    		margin-top: 30px;
+    		height: 40px;
+    		width: 76%;
+    		float: left;
+    		overflow: hidden;
+    	}
+   
+    	.news_heardb ul{
+    		font-size: 0px;
+    	}
+    	.news_heardb ul li{
+    		display: inline-block;
+    		height: 38px;
+    		font:400 16px/38px "微软雅黑";
+    		padding: 0px 20px;
+    		margin: 0px 10px;
+    		border: 1px solid #dcdcdc;
+    		background: white;
+    		
+    		cursor: pointer;
+    		color: gray;
+    		transition: all 1s;
+    		overflow: hidden;
+    		
+    	}
+    	.news_heardb ul li:hover{
+    		background: #252f03;
+    		color: white;
+    		border: 1px solid #252f03;
+    	}
+		.new_box{
+			width: 86%;
+    		margin: auto;
+    		margin-top: 80px;
+    		overflow: hidden;
+    		display: flex;
+    		display: -webkit-flex;
+    		flex-flow: row wrap;
+  			align-content: flex-start;
+		}
 		
-	</div>
+		.new_box>div {
+		  box-sizing: border-box;
+		  flex: 0 0 25%;
+		  border: 1px solid transparent;
+		}
+		.news_show{
+			width: 90%;
+			height: 86%;
+			background: gainsboro;
+		}
+		.news_img{
+			height: 84%;
+			background: gold;
+		}
+		.news_text{
+			height: 15%;
+			text-align: right;
+			font: 400 14px/3 "微软雅黑";
+		}
+    </style>
+    <div class="news">
+		<div class="product_heard">
+			<div class="product_hearda">
+				<span style="color: white;">新闻中心   <div></div></span>
+				<span style="color: white;">用心甄选  &nbsp;&nbsp;&nbsp;只为品质</span>
+			</div>
+			
+			<div class="news_heardb">
+				<ul>
+					<for start='1' end='9'>
+						<li>产品名称 {$i}</li>
+					</for>
+				</ul>
+			</div>
+		</div>
+	
+		<div class="new_box">
+				<for start='0' end="8">
+					<div>
+						<div class="news_show">
+							<div class="news_img">!</div>
+							
+							
+							<div class="news_text">
+								擦看更多 &nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
+						</div>
+					</div>
+				</for>
+			
+		</div>
+	
+		<div class="product_btn">
+			<div class="product_btna">
+				<img src="__PUBLIC__/images/pagea.png" class="pagep"/>
+				<img src="__PUBLIC__/images/pageo.png"/>
+				<img src="__PUBLIC__/images/pagen.png" class="pagen"/>
+			</div>
+		</div>
+    
+    
+
 	
 	<script>
 		
 		$(function(){
-	
+			
+			
+			
+			$(".product_hiden").width($(".product_show_img").width());
+			
+			
+			
+				$(".new_box>div").height($(".new_box>div").width()*0.75);
+			
+			
+			//商品切换
+			
+			var num=	 $("#product_in").find(".product_show").size();
+			
+			console.log(num);
+				
+				
+			 $("#product_in").append($("#product_in").clone());
+
+			var  i=0;
+			$(".pagen").click(function(){
+				i++;
+				if (i==num+1) {
+					$(".product_box").scrollLeft(0);
+						i=1;
+				}
+					$(".product_box").animate({scrollLeft:i*326});
+				
+				console.log(i);
+				
+			})
+			
+			$(".pagep").click(function(){
+			
+				i--;
+				
+				if (i<0) {
+					$(".product_box").scrollLeft((num)*326);
+					i=num-1;
+				}
+				
+				console.log(i);
+				$(".product_box").animate({scrollLeft:i*326});
+				
+					
+				
+			})
+			
 		})
 	
 	</script>

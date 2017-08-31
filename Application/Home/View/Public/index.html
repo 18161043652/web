@@ -82,8 +82,271 @@
 		<block name='content'></block>
 		
 		
+	
+		<block name='footer'>
+			
+			<!--友情连接-->
+			<div class="connection">
+				
+				<div class="connection_box">
+					
+				
+						<div class="product_hearda">
+							<span style="color: white;">友情连接   <div></div></span>
+							<span style="color: white;">用心甄选  &nbsp;&nbsp;&nbsp;只为品质</span>
+						</div>
+						
+						<div class="connection_heardb">
+							<ul>
+								<for start='1' end='5'>
+									<li>
+										/ <img src="__PUBLIC__/images/QQ截图20170831150808.jpg"/> 
+									</li>
+								</for>
+							</ul>
+						</div>
+					
+				</div>
+			</div>
+			
+			<!--联系我们-->
+			
+			
+			
+			
+			<div class="countus">
+				<!--；联系方式-->
+				<div>
+					<div  class="count_h">
+						联系我们
+					</div>
+					<div  class="count_n">
+						四川梓州农业有限公司
+					</div>
+					<div  class="count_t">
+						<img src="__PUBLIC__/images/地址.png"/> 地址：绵阳市崇上国际11楼4号
+					</div>
+					<div  class="count_t">
+						<img src="__PUBLIC__/images/电话 (1) - 副本.png"/> 电话：13888881234
+					</div>
+					<div  class="count_t">
+						<img src="__PUBLIC__/images/邮箱 (1).png"/> 邮箱：1321321321@live.com
+					</div>
+					<div  class="count_t">
+						<img src="__PUBLIC__/images/工具-邮编.png"/> 邮编：321321
+					</div>
+				</div>
+				
+				<!--二维码-->
+				<div>
+					
+					<div  class="count_h">
+						关注我们
+					</div>
+					
+					<div class="count_img">
+						<div>
+							<img src="__PUBLIC__/images/QQ截图20170831160319.jpg"/>
+							
+							<div class="count_img_t">
+								移动版官网
+							</div>
+						</div>
+						<div>
+							<img src="__PUBLIC__/images/QQ截图20170831160319.jpg"/>
+							
+							<div class="count_img_t">
+								移动版官网
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!--表单-->
+				<div >
+					
+					<div class="count_forma"></div>
+					
+					<div class="count_formb">
+						
+						<div class="count_formb_a">
+							我们只为你而想
+						</div>
+						<div class="count_formb_b">
+							我们只为你而想
+						</div>
+						<div class="count_formb_c">
+							<input type="" name="" id="" value="" placeholder="name"/>
+						</div>
+						
+						<div class="count_formb_c">
+							<input type="" name="" id="" value="" placeholder="tell"/>
+						</div>
+						
+						<div class="count_formb_c">
+							<input type="" name="" id="" value="" placeholder="emial"/>
+						</div>
+						
+						<div class="count_formb_c">
+							<textarea type="" name="" id="" value="" >请输入你的问题</textarea>
+						</div>
+						
+						<div class="count_formb_d">
+							确认提交
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--底部-->
+			<style>
+	
+				.footer{
+					margin-top: 15px;
+					width: 100%;
+					height: 50px;
+					background: #252f03;
+					position: absolute;
+				}
+				.footer_in{
+					width: 86%;
+					margin:auto;
+					height: 100%;
+					overflow: hidden;
+					line-height: 50px;
+				}
+				.footer_lefta{
+					padding: 0px 20px;
+					float: left;
+					height: 100%;
+					background: #7ea509;
+					color: #252f03;
+				}
+				
+				.footer_leftb{
+					padding: 0px 20px;
+					float: left;
+					height: 100%;
+					color: white;
+					font-weight: 600;
+				}
+				.footer_leftb span{cursor: pointer;}
+				
+				.footer_right{
+					padding: 0px 20px;
+					float: right;
+					height: 100%;
+					text-align: right;		
+					color: #80a700;			
+				}
+				
+				
+				#weixing{
+					opacity:0;
+					-webkit-transform:translateY(300px);
+					transform:translateY(300px);
+				}
+				
+				#txqq{
+					opacity:0;
+					-webkit-transform:translateY(300px);
+					transform:translateY(300px);
+					
+				}
+				
+				.qqweixshow{
+					-webkit-animation:fadeInUpBig .6s  ease both;;
+					animation:fadeInUpBig .6s  ease both;;
+				}
+					@-webkit-keyframes fadeInUpBig{
+						0%{
+							opacity:0;
+							position: absolute;
+							right: 100px;
+							webkit-transform:translateY(300px);
+						}
+						100%{
+							opacity:1;
+							-webkit-transform:translateY(-250px);
+							position: absolute;
+							right:100px;
+						}
+					}
+					@keyframes fadeInUpBig{
+						0%{
+							opacity:0;
+							position: absolute;
+							right: 100px;
+							transform:translateY(300px);
+						}
+						100%{
+							opacity:1;
+							transform:translateY(-250px);
+							position: absolute;
+							right:100px;
+							}
+					}
+			</style>
+			<div class="footer">
+				<div class="footer_in">
+					<div class="footer_lefta">
+						友情连接
+					</div>
+					
+					<div class="footer_leftb">
+						<span>兴信网络</span>/<span>梓州农业</span> 
+					</div>
+					
+					<div class="footer_right">
+						<span>版权所有  © 2018-2020 川ICP备8888888  </span> &nbsp;&nbsp;&nbsp;&nbsp;
+						<span>  技术支持：兴信网络 </span>&nbsp;&nbsp;&nbsp;
+						<span id="qqshow">
+							<img src="__PUBLIC__/images/QQ.png"/>
+							
+						</span>&nbsp;|&nbsp;
+						
+						<span id="wxshow"><img src="__PUBLIC__/images/微信.png"/></span>
+						
+						
+					</div>
+					
+					<img id="weixing" src="__PUBLIC__/images/QQ截图20170831160319.jpg"/>
+					<img id="txqq" src="__PUBLIC__/images/QQ截图20170831160319.jpg"/>
+					
+				</div>
+				
+				
+				
+			</div>
+		</block>
 		
-		<block name='footer'></block>
+		
+		
 		
 	</body>
+	
+	<script>
+		$(function(){
+			
+			var counth=$(".count_formb").width();
+			$(".count_formb").height(counth*0.803);
+			
+			
+			$('#qqshow').hover(function(){
+				$("#txqq").addClass('qqweixshow');
+			},function(){
+				
+				$("#txqq").removeClass('qqweixshow');
+			})
+			
+			$('#wxshow').hover(function(){
+				$("#weixing").addClass('qqweixshow');
+			},function(){
+				
+				$("#weixing").removeClass('qqweixshow');
+			})
+			
+		})
+	</script>
 </html>
